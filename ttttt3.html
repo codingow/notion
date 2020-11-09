@@ -297,13 +297,13 @@ function buttonClick() {
   int loopi=0;
   for(loopi=0;loopi<3;loopi++)
   {
-     var randomNumber[i] = Math.random();
-     var chooseRange[i] = (randomNumber[i] * cardsNumber) + 0;
-     var numberGen[i] = Math.floor(chooseRange[i] );
+     var randomNumber[loopi] = Math.random();
+     var chooseRange[loopi] = (randomNumber[loopi] * cardsNumber) + 0;
+     var numberGen[loopi] = Math.floor(chooseRange[loopi] );
      
      // Change HTML
 
-     document.getElementById('face').src = cards[numberGen[i] ].src;
+     document.getElementById('face').src = cards[numberGen[loopi] ].src;
   } 
   
 
